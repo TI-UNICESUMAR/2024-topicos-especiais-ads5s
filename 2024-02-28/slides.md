@@ -69,7 +69,7 @@ const reducer = (state, action) => {
 const [state, dispatch] = React.useReducer(reducer, initialState)
 ```
 
-[Exemplo de uso do useReducer](https://snack.expo.dev/@satinp/exemplo-usereducer)
+[Exemplo de uso do useReducer](https://snack.expo.dev/@satinp/exemplo-usereducer)  
 [Documentação do React sobre useReducer](https://react.dev/reference/react/useReducer)
 
 ---
@@ -84,7 +84,7 @@ const memoizedCallback = React.useCallback(() => {
 }, [a, b])
 ```
 
-[Exemplo de uso do useCallback](https://snack.expo.dev/@satinp/exemplo-usecallback)
+[Exemplo de uso do useCallback](https://snack.expo.dev/@satinp/exemplo-usecallback)  
 [Documentação do React sobre useCallback](https://react.dev/reference/react/useCallback)
 
 ---
@@ -97,7 +97,7 @@ Muito semelhante ao useCallback. Retorna um valor memorizado, que só muda se um
 const memoizedValue = React.useMemo(() => computeExpensiveValue(a, b), [a, b])
 ```
 
-[Exemplo de uso do useMemo](https://snack.expo.dev/@satinp/exemplo-usememo)
+[Exemplo de uso do useMemo](https://snack.expo.dev/@satinp/exemplo-usememo)  
 [Documentação do React sobre useMemo](https://react.dev/reference/react/useMemo)
 
 ---
@@ -183,7 +183,7 @@ A propriedade **alignSelf** sobrescreve a propriedade **alignItems** do containe
 
 Por exemplo, **alignSelf: flex-end** alinha um item no final do container.
 
-[Documentaçao do React Native sobre Flexbox](https://reactnative.dev/docs/flexbox)
+[Documentaçao do React Native sobre Flexbox](https://reactnative.dev/docs/flexbox)  
 [CSS Tricks Guia completo de Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ---
