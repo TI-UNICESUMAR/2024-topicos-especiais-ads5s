@@ -2,8 +2,6 @@
 
 O React possui uma série de **_hooks_** que podem ser utilizados para controlar o estado, ciclo de vida e efeitos colaterais dos componentes.
 
-<!-- _footer: pedro.mateus@unicesumar.edu.br -->
-
 ---
 
 - **_useState_**: Hook que permite adicionar estado a um componente.
@@ -16,7 +14,7 @@ Toda vez que esse estado for atualizado, o componente é renderizado novamente.
 const [count, setCount] = React.useState(0)
 ```
 
-[Exemplo de uso do useState](https://snack.expo.dev/@satinp/exemplo-usestate)
+[Exemplo de uso do useState](https://snack.expo.dev/@satinp/exemplo-usestate)  
 [Documentação do React sobre useState](https://react.dev/reference/react/useState)
 
 ---
@@ -31,7 +29,7 @@ React.useEffect(() => {
 }, [])
 ```
 
-[Exemplo de uso do useEffect](https://snack.expo.dev/@satinp/exemplo-useeffect)
+[Exemplo de uso do useEffect](https://snack.expo.dev/@satinp/exemplo-useeffect)  
 [Documentação do React sobre useEffect](https://react.dev/reference/react/useEffect)
 
 ---
@@ -51,8 +49,8 @@ const Context = React.createContext(null)
 const value = React.useContext(Context)
 ```
 
-[Exemplo de uso do useContext](https://snack.expo.dev/@satinp/exemplo-usecontext)
-[Documentação do React sobre useContext](https://react.dev/reference/react/useContext)
+[Exemplo de uso do useContext](https://snack.expo.dev/@satinp/exemplo-usecontext)  
+[Documentação do React sobre useContext](https://react.dev/reference/react/useContext)  
 [Post do Kent C. Dodds sobre boas práticas com useContext](https://kentcdodds.com/blog/how-to-use-react-context-effectively)
 
 ---
@@ -224,5 +222,3 @@ const fetchData = async () => {
   }
 }
 ```
-
-<!-- _footer: pedro.mateus@unicesumar.edu.br -->
