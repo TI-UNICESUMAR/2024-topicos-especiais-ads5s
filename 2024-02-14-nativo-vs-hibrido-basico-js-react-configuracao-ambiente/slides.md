@@ -6,8 +6,6 @@ No ano de 2007, a Apple lançou o primeiro iPhone, e com ele, uma nova era de di
 
 Desde então, os smartphones se tornaram uma parte essencial da vida cotidiana, e a maioria das pessoas não consegue imaginar a vida sem eles.
 
-<!-- _footer: pedro.mateus@unicesumar.edu.br -->
-
 ---
 
 Grande parte da população mundial possui um smartphone, e a tendência é que esse número cresça cada vez mais.
