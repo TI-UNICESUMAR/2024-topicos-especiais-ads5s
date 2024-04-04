@@ -1,13 +1,17 @@
+Forms: https://forms.gle/Gf2pJSZZtgWcKmHv5
+
 Resolução da atividade anterior: https://snack.expo.dev/@satinp/navigation
 
-Adicionar no package.json os pacotes: 
+Adicionar no package.json os pacotes:
+
 ```json
-  {
-    "react-native-reanimated": "~3.6.2",
-    "@react-navigation/bottom-tabs": "6.x",
-    "@react-native-async-storage/async-storage": "1.21.0"
-  }
+{
+  "react-native-reanimated": "~3.6.2",
+  "@react-navigation/bottom-tabs": "6.x",
+  "@react-native-async-storage/async-storage": "1.21.0"
+}
 ```
+
 A partir do arquivo da aula passada (link acima), realizar as seguintes alterações:
 
 1. Criar um **BottomStackNavigator**, onde a **primeira Tab** seja a do **Squirtle** e a **segunda tab** chamada **Todo List**
