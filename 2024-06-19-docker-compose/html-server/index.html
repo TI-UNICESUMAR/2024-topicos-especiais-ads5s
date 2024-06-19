@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Server</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de Dados da API</h1>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tableBody = document.querySelector('#data-table tbody')
+
+      // Função para buscar dados da API
+      async function fetchData() {
+        try {
+          const response = await fetch('http://localhost:3001/')
+          if (!response.ok) {
+            throw new Error('Erro na requisição')
+          }
+          const data = await response.json()
+          populateTable(data)
+        } catch (error) {
+          console.error('Erro ao buscar dados:', error)
+        }
+      }
+
+      function populateTable(data) {
+        data.forEach((item) => {
+          const row = document.createElement('tr')
+          const nameCell = document.createElement('td')
+          const ageCell = document.createElement('td')
+
+          nameCell.textContent = item.nome
+          ageCell.textContent = item.idade
+
+          row.appendChild(nameCell)
+          row.appendChild(ageCell)
+          tableBody.appendChild(row)
+        })
+      }
+
+      fetchData()
+    })
+  </script>
+</html>
