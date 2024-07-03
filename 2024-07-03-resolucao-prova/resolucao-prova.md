@@ -131,7 +131,7 @@ const Counter = () => {
 
 A) Um ambiente de desenvolvimento completo  
 B) Um container em execução  
-**_C) Um modelo para criar containers_** 
+**_C) Um modelo para criar containers_**  
 D) Um software para gerenciar containers  
 
 <br><br>
